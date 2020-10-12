@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby -w
+# frozen_string_literal: true
+
+require File.expand_path(File.join(__dir__, '../lib/smart_log/parser_cli'))
+
+exit SmartLog::ParserCLI.run(ARGV.shift)
